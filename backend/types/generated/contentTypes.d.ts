@@ -575,6 +575,7 @@ export interface ApiTeamMemberTeamMember extends Struct.CollectionTypeSchema {
     Name: Schema.Attribute.String;
     Photo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     publishedAt: Schema.Attribute.DateTime;
+    Rank: Schema.Attribute.Integer;
     Role: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
